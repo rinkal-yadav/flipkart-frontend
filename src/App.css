@@ -28,6 +28,12 @@
 
 }
 
+.loading{
+  width: 130px;
+  height: 130px;
+  margin-left: 650px;
+}
+
 .Scroll::-webkit-scrollbar-thumb, .Scroll2::-webkit-scrollbar-thumb {
   background: #2874f0;
   border-radius: 20px;
@@ -111,6 +117,7 @@ body::-webkit-scrollbar-thumb {
   .supercoinimg{ width: 100%; }
   .emptyContainer{ padding: 35px; }
   .emptyContainer .emptyitems>button{ margin: 5px;}
+  .loading{ width: 100px; height: 98px; margin-left: 130px;}
 
 }
   

@@ -1,5 +1,4 @@
 import { Box, Typography, styled, Button, Divider } from '@mui/material';
-import React from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css';
 import Countdown from 'react-countdown';
@@ -103,7 +102,7 @@ const Slide = ({ products, title, timer }) => {
                 }
 
 
-                <Button style={{ marginLeft: 'auto', borderRadius: '2px', backgroundColor: '#2874f0', fontSize: '13px' }} variant="contained">View All</Button>
+             <Button style={{ marginLeft: 'auto', borderRadius: '2px', backgroundColor: '#2874f0', fontSize: '13px' }} variant="contained"><Link to='../ViewAll.js'>View All </Link></Button> 
             </Deal>
             <Divider />
 
@@ -121,8 +120,8 @@ const Slide = ({ products, title, timer }) => {
 
 
             >
-                {
-                    products.map(product => (
+                {   products[1]?
+                    (products.map(product => (
                         <Link to={`product/${product.id}`} style={{ textDecoration: 'none' }}>
                             <Box style={{ textAlign: 'center' }}>
                                 <ProductImage src={product.url} alt='product' />
@@ -133,7 +132,9 @@ const Slide = ({ products, title, timer }) => {
 
                             </Box>
                         </Link>
-                    ))
+                    )))
+                :
+                <img className='loading' alt='loading' src='https://media.tenor.com/wpSo-8CrXqUAAAAj/loading-loading-forever.gif'/>
                 }
 
             </Carousel>

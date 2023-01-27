@@ -25,7 +25,7 @@ const LeftContainer = styled(Grid)(({theme})=>({
 
 
 const RightContainer = styled(Grid)(({theme})=>({
-    marginTop:'50px',
+    marginTop:'70px',
     [theme.breakpoints.down('md')]:{
       maxWidth:'100%',
       marginTop:'5px',
@@ -57,6 +57,7 @@ const DetailView = () => {
             <ProductDetail product={product}/>
           </RightContainer>
         </Container>
+
       }
 
 

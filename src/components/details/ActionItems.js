@@ -16,9 +16,12 @@ const LeftContainer = styled(Box)(({theme})=>({
     padding:'20px',
   }
 }))
-const Image = styled('img')({
-    padding: '15px 0px'
-})
+const Image = styled('img')(({theme})=>({    
+  padding: '15px 0px',
+  [theme.breakpoints.down('md')]:{
+    width:'100%'
+  }
+}))
 
 const ImageBox = styled(Box)(({theme})=>({
   padding: '15px 20px',
@@ -38,7 +41,6 @@ const ButtonStyle = styled(Button)(({theme})=>({
       width: '47%',
       fontSize: '10px',
       height: '25px',
-      marginBottom: '7px',
       padding: '10px 0px',
       alignItems:'center',
     
