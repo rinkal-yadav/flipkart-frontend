@@ -102,7 +102,7 @@ const Slide = ({ products, title, timer }) => {
                 }
 
 
-             <Button style={{ marginLeft: 'auto', borderRadius: '2px', backgroundColor: '#2874f0', fontSize: '13px' }} variant="contained"><Link to='../ViewAll.js'>View All </Link></Button> 
+             <Button style={{ marginLeft: 'auto', borderRadius: '2px', backgroundColor: '#2874f0', fontSize: '13px' }} variant="contained"><Link to='#' style={{ textDecoration: 'none', color:'#f2f2f2' }}>View All </Link></Button> 
             </Deal>
             <Divider />
 

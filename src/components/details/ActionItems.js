@@ -19,7 +19,7 @@ const LeftContainer = styled(Box)(({theme})=>({
 const Image = styled('img')(({theme})=>({    
   padding: '15px 0px',
   [theme.breakpoints.down('md')]:{
-    width:'100%'
+    // width:'100%'
   }
 }))
 
